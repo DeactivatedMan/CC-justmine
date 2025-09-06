@@ -37,7 +37,7 @@ for tunnel=1,tunnels do
         end
     end
     if direct then turtle.turnLeft() else turtle.turnRight() end
-    for _=1,spacing do turtle.dig();turtle.forward() end
+    for _=1,spacing do turtle.dig();turtle.forward();turtle.digDown() end
     if direct then turtle.turnLeft() else turtle.turnRight() end
     --[[term.clear()
     term.write("Dumping bad items!")
