@@ -52,7 +52,7 @@ for tunnel=1,tunnels do
 
         for s=1,16 do
             local item = turtle.getItemDetail(s)
-            if item ~= "nil" then
+            if item ~= "nil" and type(item) ~= "nil" then
                 if not string.find(item.name,"raw") and not string.find("minecraft:redstone minecraft:lapis_lazuli minecraft:diamond",item.name) then
                     turtle.select(s)
                     turtle.dropDown()
