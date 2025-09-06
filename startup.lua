@@ -5,7 +5,7 @@ local spacing = tonumber(read())+1
 print("How many tunnels should I make?")
 local tunnels = tonumber(read())
 print("What direction should I move towards?\n[Left / Right]")
-local temp = read().lower()
+local temp = string.lower(tostring(read()))
 local direct = string.find(temp, "l") and 1 or 0
 --[[print("What do I leave?\n Examples: stone,deepslate,andesite")
 local listed = string.gsub(read(), "%s", "")
