@@ -40,6 +40,7 @@ for tunnel=1,tunnels do
             term.clear()
         end
     end
+    turtle.digDown()
     if direct==1 then turtle.turnLeft() else turtle.turnRight() end
     for _=1,spacing do turtle.dig();turtle.forward();turtle.digDown() end
     if direct==1 then turtle.turnLeft() else turtle.turnRight() end
