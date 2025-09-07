@@ -102,7 +102,7 @@ for tunnel=1,tunnels do
             turtle.select(s)
             local item = turtle.getItemDetail()
             if textutils.serialise(item) ~= "nil" then
-                if not string.find(item.name,"raw") and not string.find("minecraft:redstone minecraft:lapis_lazuli minecraft:diamond",item.name) then
+                if not string.find(item.name,"raw") and not string.find(item.name,"coal") and not string.find("minecraft:redstone minecraft:lapis_lazuli minecraft:diamond",item.name) then
                     turtle.dropDown()
                     droppedOrAir = true
                 end
